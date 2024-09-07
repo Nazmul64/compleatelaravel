@@ -5,7 +5,7 @@
   13 => 'view',
   'app' => 
   array (
-    'name' => 'Laravel',
+    'name' => 'Ecommerce',
     'env' => 'local',
     'debug' => true,
     'url' => 'http://localhost',
@@ -298,7 +298,7 @@
       'options' => 
       array (
         'cluster' => 'redis',
-        'prefix' => 'laravel_database_',
+        'prefix' => 'ecommerce_database_',
       ),
       'default' => 
       array (
@@ -513,18 +513,18 @@
   ),
   'mail' => 
   array (
-    'default' => 'log',
+    'default' => 'smtp',
     'mailers' => 
     array (
       'smtp' => 
       array (
         'transport' => 'smtp',
         'url' => NULL,
-        'host' => '127.0.0.1',
+        'host' => 'sandbox.smtp.mailtrap.io',
         'port' => '2525',
-        'encryption' => NULL,
-        'username' => NULL,
-        'password' => NULL,
+        'encryption' => 'tls',
+        'username' => '81f10835732b9d',
+        'password' => 'd100161cd1f749',
         'timeout' => NULL,
         'local_domain' => 'localhost',
       ),
@@ -575,8 +575,8 @@
     ),
     'from' => 
     array (
-      'address' => 'hello@example.com',
-      'name' => 'Laravel',
+      'address' => 'nazmulhossain@gmail.comexample.com',
+      'name' => 'Ecommerce',
     ),
     'markdown' => 
     array (
@@ -687,7 +687,7 @@
       0 => 2,
       1 => 100,
     ),
-    'cookie' => 'laravel_session',
+    'cookie' => 'ecommerce_session',
     'path' => '/',
     'domain' => NULL,
     'secure' => NULL,

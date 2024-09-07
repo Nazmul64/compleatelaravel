@@ -3,10 +3,16 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Middleware\IsAdmin;
+use App\Http\Controllers\Bckend\CategoryController;
 Route::get('/', function () {
     return view('welcome');
 });
 
 Auth::routes();
 
-Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('admin.home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('admin.home');
+
+// Category Routes
+Route::prefix('Category')->group(function () {
+    Route::get('/added', [CategoryController::class, 'index'])->name('category.index');
+});

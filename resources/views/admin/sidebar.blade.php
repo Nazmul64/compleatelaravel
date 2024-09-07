@@ -23,15 +23,15 @@
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-copy"></i>
                         <p>
-                            Layout Options
+                            Category
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{route('category.index')}}" class="nav-link">
                                 <i class="nav-icon far fa-circle text-danger"></i>
-                                <p class="text">Important</p>
+                                <p class="text">Add Category</p>
                             </a>
                         </li>
                         <li class="nav-item">

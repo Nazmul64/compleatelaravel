@@ -56,6 +56,6 @@ class LoginController extends Controller
         }
     }
     public function adminlogin(){
-        return view('auth.admin_login');
+        return redirect()->route('auth.admin_login')->with('success', 'Logout Successfully');
     }
 }
