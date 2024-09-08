@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Bckend;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class CategoryController extends Controller
 {
@@ -13,4 +14,20 @@ class CategoryController extends Controller
      $categories =Category::all();
     return view("backend.category.index",compact("categories"));
  }
+ public function categorystore(Request $request){
+    $request->validate([
+        "category_name"=>"required",
+    ]);
+    Category::create([
+        "category_name"=> $request->category_name,
+        "category_slug"=>str::slug($request->category_name,'-'),
+    ]);
+ return redirect()->route('category.index')->with('success','Category Insert Successfully!');
+ }
+ public function categorydelete($id){
+    Category::find($id)->delete();
+    return redirect()->route('category.index')->with('delete','Category delete Successfully!');
+ }
+
+
 }
