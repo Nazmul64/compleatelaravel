@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::vkeaN9To5eHAFXPb',
+            '_route' => 'generated::eOPmmLmKkkrQacKs',
           ),
           1 => NULL,
           2 => 
@@ -33,7 +33,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::LSqd2cLiE4wtH00t',
+            '_route' => 'generated::keTZhqwbWGOqPOpg',
           ),
           1 => NULL,
           2 => 
@@ -70,7 +70,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::y9PMOYWGUFGn3ZkW',
+            '_route' => 'generated::2uHNvVWeTXQblkjA',
           ),
           1 => NULL,
           2 => 
@@ -125,7 +125,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::4hGu3tCTuEswyEPr',
+            '_route' => 'generated::60i5PfyC9ZqjtWcy',
           ),
           1 => NULL,
           2 => 
@@ -216,7 +216,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::pK9jmlueT0rVl2Gm',
+            '_route' => 'generated::1C0PiqsVhHbodKq6',
           ),
           1 => NULL,
           2 => 
@@ -249,7 +249,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/Category/added' => 
+      '/category/added' => 
       array (
         0 => 
         array (
@@ -269,7 +269,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/Category/added-store' => 
+      '/category/added-store' => 
       array (
         0 => 
         array (
@@ -288,10 +288,29 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/category/added-update' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'category.categoryupdate',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
-      0 => '{^(?|/password/reset/([^/]++)(*:31)|/Category/added\\-delete/([^/]++)(*:70))/?$}sDu',
+      0 => '{^(?|/password/reset/([^/]++)(*:31)|/category/(?|added\\-delete/([^/]++)(*:73)|category/edit/([^/]++)(*:102)))/?$}sDu',
     ),
     3 => 
     array (
@@ -318,13 +337,36 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      70 => 
+      73 => 
       array (
         0 => 
         array (
           0 => 
           array (
             '_route' => 'category.delete',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      102 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'generated::nzWQxUFRNRjwvbno',
           ),
           1 => 
           array (
@@ -356,7 +398,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::vkeaN9To5eHAFXPb' => 
+    'generated::eOPmmLmKkkrQacKs' => 
     array (
       'methods' => 
       array (
@@ -371,7 +413,7 @@ app('router')->setCompiledRoutes(
 
                     return \\Illuminate\\Support\\Facades\\View::file(\'D:\\\\ecommerse\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\');
                 }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000002e90000000000000000";}}',
-        'as' => 'generated::vkeaN9To5eHAFXPb',
+        'as' => 'generated::eOPmmLmKkkrQacKs',
       ),
       'fallback' => false,
       'defaults' => 
@@ -387,7 +429,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::LSqd2cLiE4wtH00t' => 
+    'generated::keTZhqwbWGOqPOpg' => 
     array (
       'methods' => 
       array (
@@ -409,7 +451,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::LSqd2cLiE4wtH00t',
+        'as' => 'generated::keTZhqwbWGOqPOpg',
       ),
       'fallback' => false,
       'defaults' => 
@@ -462,7 +504,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::y9PMOYWGUFGn3ZkW' => 
+    'generated::2uHNvVWeTXQblkjA' => 
     array (
       'methods' => 
       array (
@@ -482,7 +524,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::y9PMOYWGUFGn3ZkW',
+        'as' => 'generated::2uHNvVWeTXQblkjA',
       ),
       'fallback' => false,
       'defaults' => 
@@ -571,7 +613,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::4hGu3tCTuEswyEPr' => 
+    'generated::60i5PfyC9ZqjtWcy' => 
     array (
       'methods' => 
       array (
@@ -591,7 +633,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::4hGu3tCTuEswyEPr',
+        'as' => 'generated::60i5PfyC9ZqjtWcy',
       ),
       'fallback' => false,
       'defaults' => 
@@ -790,7 +832,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::pK9jmlueT0rVl2Gm' => 
+    'generated::1C0PiqsVhHbodKq6' => 
     array (
       'methods' => 
       array (
@@ -810,7 +852,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::pK9jmlueT0rVl2Gm',
+        'as' => 'generated::1C0PiqsVhHbodKq6',
       ),
       'fallback' => false,
       'defaults' => 
@@ -870,7 +912,7 @@ app('router')->setCompiledRoutes(
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'Category/added',
+      'uri' => 'category/added',
       'action' => 
       array (
         'middleware' => 
@@ -880,7 +922,7 @@ app('router')->setCompiledRoutes(
         'uses' => 'App\\Http\\Controllers\\Bckend\\CategoryController@index',
         'controller' => 'App\\Http\\Controllers\\Bckend\\CategoryController@index',
         'namespace' => NULL,
-        'prefix' => '/Category',
+        'prefix' => '/category',
         'where' => 
         array (
         ),
@@ -906,7 +948,7 @@ app('router')->setCompiledRoutes(
       array (
         0 => 'POST',
       ),
-      'uri' => 'Category/added-store',
+      'uri' => 'category/added-store',
       'action' => 
       array (
         'middleware' => 
@@ -916,7 +958,7 @@ app('router')->setCompiledRoutes(
         'uses' => 'App\\Http\\Controllers\\Bckend\\CategoryController@categorystore',
         'controller' => 'App\\Http\\Controllers\\Bckend\\CategoryController@categorystore',
         'namespace' => NULL,
-        'prefix' => '/Category',
+        'prefix' => '/category',
         'where' => 
         array (
         ),
@@ -943,7 +985,7 @@ app('router')->setCompiledRoutes(
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'Category/added-delete/{id}',
+      'uri' => 'category/added-delete/{id}',
       'action' => 
       array (
         'middleware' => 
@@ -953,11 +995,84 @@ app('router')->setCompiledRoutes(
         'uses' => 'App\\Http\\Controllers\\Bckend\\CategoryController@categorydelete',
         'controller' => 'App\\Http\\Controllers\\Bckend\\CategoryController@categorydelete',
         'namespace' => NULL,
-        'prefix' => '/Category',
+        'prefix' => '/category',
         'where' => 
         array (
         ),
         'as' => 'category.delete',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'generated::nzWQxUFRNRjwvbno' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'category/category/edit/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Bckend\\CategoryController@category',
+        'controller' => 'App\\Http\\Controllers\\Bckend\\CategoryController@category',
+        'namespace' => NULL,
+        'prefix' => '/category',
+        'where' => 
+        array (
+        ),
+        'as' => 'generated::nzWQxUFRNRjwvbno',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'category.categoryupdate' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'category/added-update',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Bckend\\CategoryController@categoryupdate',
+        'controller' => 'App\\Http\\Controllers\\Bckend\\CategoryController@categoryupdate',
+        'namespace' => NULL,
+        'prefix' => '/category',
+        'where' => 
+        array (
+        ),
+        'as' => 'category.categoryupdate',
       ),
       'fallback' => false,
       'defaults' => 
