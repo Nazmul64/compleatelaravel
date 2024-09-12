@@ -19,11 +19,14 @@ Route::prefix('category')->group(function () {
     Route::get('/added', [CategoryController::class, 'index'])->name('category.index');
     Route::post('/added-store', [CategoryController::class, 'categorystore'])->name('category.store');
     Route::get('/added-delete/{id}', [CategoryController::class, 'categorydelete'])->name('category.delete');
-    Route::get('category/edit/{id}', [CategoryController::class, 'category']);
+    Route::get('/category/edit/{id}', [CategoryController::class, 'edit']);
     Route::post('/added-update', [CategoryController::class, 'categoryupdate'])->name('category.categoryupdate');
 
 });
 
 Route::prefix('subcategory')->group(function () {
     Route::get('/added', [SubcategoriesController::class, 'index'])->name('subcategory.index');
+    Route::post('/store', [SubcategoriesController::class, 'store'])->name('subcategory.store');
+    Route::get('/subcategory/edit/{id}', [CategoryController::class, 'subedit']);
+    Route::get('/delete/{id}', [SubcategoriesController::class, 'delete'])->name('subcategory.delete');
 });

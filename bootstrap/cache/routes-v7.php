@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::eOPmmLmKkkrQacKs',
+            '_route' => 'generated::pKhAtQwI2eMJmp7l',
           ),
           1 => NULL,
           2 => 
@@ -33,7 +33,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::keTZhqwbWGOqPOpg',
+            '_route' => 'generated::O3uPfoq3E2wzpUHU',
           ),
           1 => NULL,
           2 => 
@@ -70,7 +70,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::2uHNvVWeTXQblkjA',
+            '_route' => 'generated::MVnNCG4oePYVjyqn',
           ),
           1 => NULL,
           2 => 
@@ -125,7 +125,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::60i5PfyC9ZqjtWcy',
+            '_route' => 'generated::4e9Wm6mgBVulESRs',
           ),
           1 => NULL,
           2 => 
@@ -216,7 +216,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::1C0PiqsVhHbodKq6',
+            '_route' => 'generated::zzHKFqRSRUwyhKuL',
           ),
           1 => NULL,
           2 => 
@@ -307,10 +307,49 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/subcategory/added' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'subcategory.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/subcategory/store' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'subcategory.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
-      0 => '{^(?|/password/reset/([^/]++)(*:31)|/category/(?|added\\-delete/([^/]++)(*:73)|category/edit/([^/]++)(*:102)))/?$}sDu',
+      0 => '{^(?|/password/reset/([^/]++)(*:31)|/category/(?|added\\-delete/([^/]++)(*:73)|category/edit/([^/]++)(*:102))|/subcategory/(?|subcategory/edit/([^/]++)(*:152)|delete/([^/]++)(*:175)))/?$}sDu',
     ),
     3 => 
     array (
@@ -366,7 +405,53 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::nzWQxUFRNRjwvbno',
+            '_route' => 'generated::DzjwsBKfGNYDEKbW',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      152 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'generated::74zLMpChTqjnP5H1',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      175 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'subcategory.delete',
           ),
           1 => 
           array (
@@ -398,7 +483,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::eOPmmLmKkkrQacKs' => 
+    'generated::pKhAtQwI2eMJmp7l' => 
     array (
       'methods' => 
       array (
@@ -413,7 +498,7 @@ app('router')->setCompiledRoutes(
 
                     return \\Illuminate\\Support\\Facades\\View::file(\'D:\\\\ecommerse\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\');
                 }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000002e90000000000000000";}}',
-        'as' => 'generated::eOPmmLmKkkrQacKs',
+        'as' => 'generated::pKhAtQwI2eMJmp7l',
       ),
       'fallback' => false,
       'defaults' => 
@@ -429,7 +514,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::keTZhqwbWGOqPOpg' => 
+    'generated::O3uPfoq3E2wzpUHU' => 
     array (
       'methods' => 
       array (
@@ -451,7 +536,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::keTZhqwbWGOqPOpg',
+        'as' => 'generated::O3uPfoq3E2wzpUHU',
       ),
       'fallback' => false,
       'defaults' => 
@@ -504,7 +589,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::2uHNvVWeTXQblkjA' => 
+    'generated::MVnNCG4oePYVjyqn' => 
     array (
       'methods' => 
       array (
@@ -524,7 +609,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::2uHNvVWeTXQblkjA',
+        'as' => 'generated::MVnNCG4oePYVjyqn',
       ),
       'fallback' => false,
       'defaults' => 
@@ -613,7 +698,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::60i5PfyC9ZqjtWcy' => 
+    'generated::4e9Wm6mgBVulESRs' => 
     array (
       'methods' => 
       array (
@@ -633,7 +718,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::60i5PfyC9ZqjtWcy',
+        'as' => 'generated::4e9Wm6mgBVulESRs',
       ),
       'fallback' => false,
       'defaults' => 
@@ -832,7 +917,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::1C0PiqsVhHbodKq6' => 
+    'generated::zzHKFqRSRUwyhKuL' => 
     array (
       'methods' => 
       array (
@@ -852,7 +937,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::1C0PiqsVhHbodKq6',
+        'as' => 'generated::zzHKFqRSRUwyhKuL',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1015,7 +1100,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::nzWQxUFRNRjwvbno' => 
+    'generated::DzjwsBKfGNYDEKbW' => 
     array (
       'methods' => 
       array (
@@ -1029,14 +1114,14 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'uses' => 'App\\Http\\Controllers\\Bckend\\CategoryController@category',
-        'controller' => 'App\\Http\\Controllers\\Bckend\\CategoryController@category',
+        'uses' => 'App\\Http\\Controllers\\Bckend\\CategoryController@edit',
+        'controller' => 'App\\Http\\Controllers\\Bckend\\CategoryController@edit',
         'namespace' => NULL,
         'prefix' => '/category',
         'where' => 
         array (
         ),
-        'as' => 'generated::nzWQxUFRNRjwvbno',
+        'as' => 'generated::DzjwsBKfGNYDEKbW',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1073,6 +1158,153 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'category.categoryupdate',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'subcategory.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'subcategory/added',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Bckend\\SubcategoriesController@index',
+        'controller' => 'App\\Http\\Controllers\\Bckend\\SubcategoriesController@index',
+        'namespace' => NULL,
+        'prefix' => '/subcategory',
+        'where' => 
+        array (
+        ),
+        'as' => 'subcategory.index',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'subcategory.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'subcategory/store',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Bckend\\SubcategoriesController@store',
+        'controller' => 'App\\Http\\Controllers\\Bckend\\SubcategoriesController@store',
+        'namespace' => NULL,
+        'prefix' => '/subcategory',
+        'where' => 
+        array (
+        ),
+        'as' => 'subcategory.store',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'generated::74zLMpChTqjnP5H1' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'subcategory/subcategory/edit/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Bckend\\CategoryController@subedit',
+        'controller' => 'App\\Http\\Controllers\\Bckend\\CategoryController@subedit',
+        'namespace' => NULL,
+        'prefix' => '/subcategory',
+        'where' => 
+        array (
+        ),
+        'as' => 'generated::74zLMpChTqjnP5H1',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'subcategory.delete' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'subcategory/delete/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Bckend\\SubcategoriesController@delete',
+        'controller' => 'App\\Http\\Controllers\\Bckend\\SubcategoriesController@delete',
+        'namespace' => NULL,
+        'prefix' => '/subcategory',
+        'where' => 
+        array (
+        ),
+        'as' => 'subcategory.delete',
       ),
       'fallback' => false,
       'defaults' => 

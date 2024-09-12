@@ -28,11 +28,15 @@ class CategoryController extends Controller
     Category::find($id)->delete();
     return redirect()->route('category.index')->with('delete','Category delete Successfully!');
  }
-public function category($id){
-  $category=Category::where('id',$id)->first();
-  return response()->json($category);
+ public function edit($id) {
+    $category = Category::find($id);
+    return response()->json($category);
 }
+
 public function categoryupdate(Request $request){
+    $request->validate([
+        'category_name' => 'required|string|max:255',
+    ]);
     $category=Category::where('id',$request->id)->first();
     $category->update([
         "category_name"=> $request->category_name,

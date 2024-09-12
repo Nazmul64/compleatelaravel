@@ -90,7 +90,7 @@
               @csrf
             <div class="form-group">
               <label for="recipient-name" class="col-form-label"> Category Edit</label>
-              <input type="text" name="e_category_name" id="e_category_name" class="form-control" id="recipient-name"placeholder="Enter Your Category Name">
+              <input type="text" name="category_name" id="e_category_name" class="form-control" id="recipient-name"placeholder="Enter Your Category Name">
               <input type="hidden" name="id" class="form-control" id="e_category_id"placeholder="Enter Your Category Name">
             </div>
         </div>
@@ -103,15 +103,14 @@
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <script type="text/javascript">
-    $(document).ready(function() {
-      $('body').on('click', '.edit', function() {
-        let cat_id = $(this).data('id');
-         $.get('category/edit/'+cat_id ,function(data){
-           $('#e_category_name').val(data.category_name);
-           $('#e_category_id').val(data.id);
-         });
-      });
-    });
+     $('body').on('click','.edit',function(){
+        let cat_id =$(this).data('id');
+        $.get('category/edit/' +cat_id, function(data){
+          $('#e_category_name').val(data.category_name);
+          $('#e_category_id').val(data.id)
+        });
+     });
   </script>
   <!--------edit-model--->
