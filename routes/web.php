@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Middleware\IsAdmin;
 use App\Http\Controllers\Bckend\CategoryController;
 use App\Http\Controllers\Bckend\SubcategoriesController;
+use App\Http\Controllers\Bckend\ChildcategoryController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -30,4 +31,8 @@ Route::prefix('subcategory')->group(function () {
     Route::get('/delete/{id}', [SubcategoriesController::class, 'delete'])->name('subcategory.delete');
     Route::get('/subcategory/edit/{id}', [SubcategoriesController::class, 'subedit']);
     Route::post('/added-update', [SubcategoriesController::class, 'subcategory'])->name('subcategory.subcategoryupdate');
+});
+
+Route::prefix('childcategory')->group(function () {
+    Route::get('/added', [ChildcategoryController::class, 'index'])->name('childcategory.index');
 });
