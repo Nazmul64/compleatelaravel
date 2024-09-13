@@ -27,12 +27,21 @@ class SubcategoriesController extends Controller
         return back()->with('success','Data Insert Successfully!');
     }
     public function subedit($id){
-        $subcategory = Subcategories::find($id);  // Use find to directly get the subcategory by id
+        $subcategory = Subcategories::find($id);
         return response()->json($subcategory);
     }
+
     public function delete($id){
         $subcategory=Subcategories::find($id);
         $subcategory->delete();
         return back()->with('delete','Data delete Successfully!');
     }
+public function subcategory(Request $request){
+    Subcategories::create([
+        'category_id'=>$request->category_id,
+        'subcategory_name'=>$request->subcategory_name,
+        'subcategory_sulg'=>Str::slug($request->subcategory_name,'-'),
+    ]);
+    return back()->with('success','Data update Successfully!');
+}
 }

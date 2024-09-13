@@ -22,7 +22,7 @@
         <div class="card">
             <div class="card-body">
                 <h3>
-                    <a type="button" id="addCategoryModal" class="btn btn-success mb-1" data-toggle="modal" data-target="#addModal">Add New Category</a>
+                    <a type="button" id="addCategoryModal" class="btn btn-success mb-1" data-toggle="modal" data-target="#addModal">Add New Subcategory</a>
                 </h3>
                 <table id="example1" class="table table-bordered table-striped table-sm">
                     <thead>
@@ -39,10 +39,10 @@
                             <tr>
                                 <td>{{ $index + 1 }}</td>
                                 <td>{{ $item->subcategory_name }}</td>
-                                <td>{{ $item->subcategory_slug }}</td>
+                                <td>{{ $item->subcategory_sulg }}</td>
                                 <td>{{ $item->category->category_name }}</td>
                                 <td>
-                                    <a href="javascript:void(0)" data-toggle="modal" class="btn btn-success edit" data-id="{{ $item->id }}" data-target="#editModal"><i class="fa fa-edit"></i></a>
+                                    <a href=""id="edit" data-toggle="modal" class="btn btn-success edit" data-id="{{ $item->id }}" data-target="#editModal"><i class="fa fa-edit"></i></a>
                                     <a href="{{ route('subcategory.delete', $item->id) }}" class="btn btn-danger" id="delete"><i class="fa fa-trash"></i></a>
                                 </td>
                             </tr>
@@ -100,19 +100,20 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form method="post" action="">
+                <form method="post" action="{{route('subcategory.subcategoryupdate')}}">
                     @csrf
                     <input type="hidden" name="id" id="subcategory_id">
                     <div class="form-group">
                         <select name="category_id" class="form-control">
                             @foreach ($category as $items)
-                                <option value="{{ $items->id }}">{{ $items->category_name }}</option>
+                                <option value="{{ $items->id }}{{$items->id==$items->$category? 'selected':''}}">{{ $items->category_name }}</option>
                             @endforeach
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="e_subcategory_name" class="col-form-label">Subcategory Name</label>
-                        <input type="text" name="subcategory_name" class="form-control" id="e_subcategory_name" placeholder="Enter Subcategory Name">
+                        <label  class="col-form-label">Subcategory Name</label>
+                       <input type="text" name="subcategory_name" id="e_subcategory_name" class="form-control" placeholder="Enter Your Subcategory Name">
+                       <input type="hidden" name="id" class="form-control" id="e_subcategory_id"placeholder="Enter Your Category Name">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -123,15 +124,16 @@
         </div>
     </div>
 </div>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
 <script type="text/javascript">
     $('body').on('click', '.edit', function () {
         let subcategory_id = $(this).data('id');
-        $.get('/subcategory/edit/' + subcategory_id, function (data) {
+        $.get('subcategory/edit/' + subcategory_id, function (data) {
             $('#e_subcategory_name').val(data.subcategory_name);
-            $('#subcategory_id').val(data.id);
+            $('#e_subcategory_id').val(data.id);
+        }).fail(function(){
+            alert('Data Not Found');
         });
     });
 </script>
+
